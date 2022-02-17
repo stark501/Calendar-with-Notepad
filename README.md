@@ -1,5 +1,5 @@
 # Calendar-with-Notepad
-<h2>text</h2>
+text
 # Must to have
 text
 # Good to have
