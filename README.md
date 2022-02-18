@@ -1,9 +1,9 @@
 # Calendar-with-Notepad
 <h2>Kalendár s poznámkami</h2>
-Je to e z kalendárik
+<h4>Je to e z kalendárik</h4>
 # Must to have
-text
+<h6>text</h6>
 # Good to have
-text
+<h6>text</h6>
 # Nice to have
-text
+<h6>text</h6>
