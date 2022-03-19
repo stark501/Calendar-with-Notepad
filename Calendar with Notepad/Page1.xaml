@@ -3,10 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Calendar_with_Notepad.Page1">
 
-    <StackLayout>
-        <Frame BackgroundColor="#D77D7D" Padding="13" Margin="2" CornerRadius="0">
-            <Label Text="Calendar with Notepad" HorizontalTextAlignment="Center" TextColor="#886B6B" FontSize="11"/>
-        </Frame>
-
+    <StackLayout Margin="5,5,5,635"
+                 
+             BackgroundColor="#D77D7D">
+        <Label Text="Calendar with Notepad"
+             FontSize="11"
+             TextColor="#886B6B"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"/>
+        <Label Text="February 2022"
+             FontSize="18"
+             FontAttributes="Bold"
+             TextColor="Black"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"/>
     </StackLayout>
+
+   
 </ContentPage>
