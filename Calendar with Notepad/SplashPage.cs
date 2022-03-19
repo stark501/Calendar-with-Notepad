@@ -19,7 +19,7 @@ namespace Calendar_with_Notepad
             var sub = new AbsoluteLayout();
             splashImage = new Image
             {
-                Source = "calendar.jpg",
+                Source = "calendar.png",
                 WidthRequest = 200,
                 HeightRequest = 200
 
