@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Calendar_with_Notepad.Page1">
 
-    <StackLayout Margin="5,5,5,635"
+    <StackLayout Margin="5,5,5,450"
                  
              BackgroundColor="#D77D7D">
         <Label Text="Calendar with Notepad"
@@ -17,6 +17,379 @@
              TextColor="Black"
              HorizontalTextAlignment="Center"
              VerticalTextAlignment="Center"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.1*" />
+                <RowDefinition Height="1.1*" />
+                <RowDefinition Height="1.1*" />
+                <RowDefinition Height="1.1*" />
+                <RowDefinition Height="1.1*" />
+                
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.6*" />
+                <ColumnDefinition Width="0.6*" />
+                <ColumnDefinition Width="0.6*" />
+                <ColumnDefinition Width="0.6*" />
+                <ColumnDefinition Width="0.6*" />
+                <ColumnDefinition Width="0.6*" />
+                <ColumnDefinition Width="0.6*" />
+            </Grid.ColumnDefinitions>
+            <Button
+            x:Name="btn1"
+            Text="Sun"
+            TextColor="Red"
+            TextTransform="None"
+            FontAttributes="Italic,Bold"
+            BackgroundColor="White"
+            FontFamily="Lobster"
+            FontSize="13"
+            Grid.Row="0"
+            Grid.Column="0"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn2"
+            Text="Mon" 
+            TextTransform="None"
+            FontAttributes="Italic,Bold"
+            BackgroundColor="White"
+            TextColor="Black"
+            FontFamily="Lobster"
+            FontSize="13"
+            Grid.Row="0"
+            Grid.Column="1"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn3"
+            Text="Tue"
+            TextTransform="None"  
+            FontAttributes="Italic,Bold"
+            BackgroundColor="White"
+            TextColor="Black"
+            FontFamily="Lobster"
+            FontSize="13"
+            Grid.Row="0"
+            Grid.Column="2"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn4"
+            Text="Wed"
+            TextTransform="None"
+            BackgroundColor="White"
+            TextColor="Black"
+            FontAttributes="Italic,Bold"
+            FontFamily="Lobster"
+            FontSize="13"
+            Grid.Row="0"
+            Grid.Column="3"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn5"
+            Text="Thu"
+            TextTransform="None"
+            BackgroundColor="White"
+            TextColor="Black"
+            FontAttributes="Italic,Bold"
+            FontFamily="Lobster"
+            FontSize="13"
+            Grid.Row="0"
+            Grid.Column="4"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn6"
+            Text="Fri"
+            FontAttributes="Italic,Bold"
+            BackgroundColor="White"
+            TextColor="Black"
+            FontFamily="Lobster"
+            TextTransform="None"
+            FontSize="13"
+            Grid.Row="0"
+            Grid.Column="5"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn7"
+            Text="Sat"
+            TextColor="MediumPurple"
+            BackgroundColor="White"
+            FontFamily="Lobster"
+            FontAttributes="Italic,Bold"
+            TextTransform="None"
+            FontSize="13"
+            Grid.Row="0"
+            Grid.Column="6"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn8"
+            BackgroundColor="White"
+            Grid.Row="1"
+            Grid.Column="0"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn9"
+            BackgroundColor="White"
+            Grid.Row="1"
+            Grid.Column="1"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn11"
+            Text="1"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="1"
+            Grid.Column="2"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn12"
+            Text="2"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="1"
+            Grid.Column="3"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn13"
+            Text="3"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="1"
+            Grid.Column="4"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn14"
+            Text="4"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="1"
+            Grid.Column="5"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn15"
+            Text="5"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="1"
+            Grid.Column="6"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn16"
+            Text="6"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="2"
+            Grid.Column="0"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn17"
+            Text="7"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="2"
+            Grid.Column="1"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn18"
+            Text="8"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="2"
+            Grid.Column="2"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn19"
+            Text="9"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="2"
+            Grid.Column="3"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn20"
+            Text="10"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="2"
+            Grid.Column="4"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn21"
+            Text="11"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="2"
+            Grid.Column="5"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn22"
+            Text="12"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="2"
+            Grid.Column="6"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn23"
+            Text="13"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="3"
+            Grid.Column="0"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn24"
+            Text="14"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="3"
+            Grid.Column="1"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn25"
+            Text="15"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="3"
+            Grid.Column="2"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn26"
+            Text="16"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="3"
+            Grid.Column="3"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn27"
+            Text="17"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="3"
+            Grid.Column="4"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn28"
+            Text="18"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="3"
+            Grid.Column="5"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn29"
+            Text="19"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="3"
+            Grid.Column="6"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn30"
+            Text="20"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="4"
+            Grid.Column="0"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn31"
+            Text="21"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="4"
+            Grid.Column="1"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn32"
+            Text="22"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="4"
+            Grid.Column="2"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn33"
+            Text="23"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="4"
+            Grid.Column="3"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn34"
+            Text="24"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="4"
+            Grid.Column="4"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn35"
+            Text="25"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="4"
+            Grid.Column="5"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn36"
+            Text="26"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="4"
+            Grid.Column="6"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn37"
+            Text="27"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="5"
+            Grid.Column="0"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn38"
+            Text="28"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="5"
+            Grid.Column="1"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn39"
+            TextColor="Black"
+            BackgroundColor="White"
+            Grid.Row="5"
+            Grid.Column="2"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn40"
+            BackgroundColor="White"
+            Grid.Row="5"
+            Grid.Column="3"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn41"
+            BackgroundColor="White"
+            Grid.Row="5"
+            Grid.Column="4"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn42"
+            BackgroundColor="White"
+            Grid.Row="5"
+            Grid.Column="5"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+            <Button
+            x:Name="btn43"
+            BackgroundColor="White"
+            Grid.Row="5"
+            Grid.Column="6"
+            HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
+
+
+            <Grid />
+        </Grid>
     </StackLayout>
 
    
