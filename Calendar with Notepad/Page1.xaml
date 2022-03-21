@@ -2,40 +2,50 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Calendar_with_Notepad.Page1">
-
-    <StackLayout Margin="5,5,5,320"                 
-             BackgroundColor="#D77D7D">
-        <Label Text="Calendar with Notepad"
+    <StackLayout>
+        <Frame 
+             BackgroundColor="#D77D7D"
+               Padding="5">
+            <StackLayout Margin="5,5,5,10"                 
+>
+                <Label Text="Calendar with Notepad"
              FontSize="11"
              TextColor="#886B6B"
              HorizontalTextAlignment="Center"
              VerticalTextAlignment="Center"/>
-        <Label Text="February 2022"
+                <Label Text="February 2022"
              FontSize="18"
              FontAttributes="Bold"
              TextColor="Black"
              HorizontalTextAlignment="Center"
              VerticalTextAlignment="Center"/>
-        
-        <Grid Background="white">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
+            </StackLayout>
                 
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.6*" />
-                <ColumnDefinition Width="0.6*" />
-                <ColumnDefinition Width="0.6*" />
-                <ColumnDefinition Width="0.6*" />
-                <ColumnDefinition Width="0.6*" />
-                <ColumnDefinition Width="0.6*" />
-                <ColumnDefinition Width="0.6*" />
-            </Grid.ColumnDefinitions>
-            <Button
+             </Frame>
+
+        <Frame Padding="0">
+            <StackLayout Margin="5,5,5,5"
+                Orientation="Horizontal"
+                         Spacing="15">
+                <Grid Background="white">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.6*" />
+                        <ColumnDefinition Width="0.6*" />
+                        <ColumnDefinition Width="0.6*" />
+                        <ColumnDefinition Width="0.6*" />
+                        <ColumnDefinition Width="0.6*" />
+                        <ColumnDefinition Width="0.6*" />
+                        <ColumnDefinition Width="0.6*" />
+                    </Grid.ColumnDefinitions>
+                    <Button
             x:Name="btn1"
             Text="Sun"
             TextColor="Red"
@@ -47,7 +57,7 @@
             Grid.Row="0"
             Grid.Column="0"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn2"
             Text="Mon" 
             TextTransform="None"
@@ -59,7 +69,7 @@
             Grid.Row="0"
             Grid.Column="1"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn3"
             Text="Tue"
             TextTransform="None"  
@@ -71,7 +81,7 @@
             Grid.Row="0"
             Grid.Column="2"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn4"
             Text="Wed"
             TextTransform="None"
@@ -83,7 +93,7 @@
             Grid.Row="0"
             Grid.Column="3"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn5"
             Text="Thu"
             TextTransform="None"
@@ -95,7 +105,7 @@
             Grid.Row="0"
             Grid.Column="4"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn6"
             Text="Fri"
             FontAttributes="Italic,Bold"
@@ -107,7 +117,7 @@
             Grid.Row="0"
             Grid.Column="5"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn7"
             Text="Sat"
             TextColor="MediumPurple"
@@ -119,19 +129,19 @@
             Grid.Row="0"
             Grid.Column="6"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn8"
             BackgroundColor="White"
             Grid.Row="1"
             Grid.Column="0"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn9"
             BackgroundColor="White"
             Grid.Row="1"
             Grid.Column="1"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn11"
             Text="1"
             TextColor="Black"
@@ -139,7 +149,7 @@
             Grid.Row="1"
             Grid.Column="2"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn12"
             Text="2"
             TextColor="Black"
@@ -147,7 +157,7 @@
             Grid.Row="1"
             Grid.Column="3"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn13"
             Text="3"
             TextColor="Black"
@@ -155,7 +165,7 @@
             Grid.Row="1"
             Grid.Column="4"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn14"
             Text="4"
             TextColor="Black"
@@ -163,7 +173,7 @@
             Grid.Row="1"
             Grid.Column="5"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn15"
             Text="5"
             TextColor="Black"
@@ -171,7 +181,7 @@
             Grid.Row="1"
             Grid.Column="6"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn16"
             Text="6"
             TextColor="Black"
@@ -179,7 +189,7 @@
             Grid.Row="2"
             Grid.Column="0"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn17"
             Text="7"
             TextColor="Black"
@@ -187,7 +197,7 @@
             Grid.Row="2"
             Grid.Column="1"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn18"
             Text="8"
             TextColor="Black"
@@ -195,7 +205,7 @@
             Grid.Row="2"
             Grid.Column="2"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn19"
             Text="9"
             TextColor="Black"
@@ -203,7 +213,7 @@
             Grid.Row="2"
             Grid.Column="3"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn20"
             Text="10"
             TextColor="Black"
@@ -211,7 +221,7 @@
             Grid.Row="2"
             Grid.Column="4"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn21"
             Text="11"
             TextColor="Black"
@@ -219,7 +229,7 @@
             Grid.Row="2"
             Grid.Column="5"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn22"
             Text="12"
             TextColor="Black"
@@ -227,7 +237,7 @@
             Grid.Row="2"
             Grid.Column="6"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn23"
             Text="13"
             TextColor="Black"
@@ -235,7 +245,7 @@
             Grid.Row="3"
             Grid.Column="0"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn24"
             Text="14"
             TextColor="Black"
@@ -243,7 +253,7 @@
             Grid.Row="3"
             Grid.Column="1"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn25"
             Text="15"
             TextColor="Black"
@@ -251,7 +261,7 @@
             Grid.Row="3"
             Grid.Column="2"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn26"
             Text="16"
             TextColor="Black"
@@ -259,7 +269,7 @@
             Grid.Row="3"
             Grid.Column="3"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn27"
             Text="17"
             TextColor="Black"
@@ -267,7 +277,7 @@
             Grid.Row="3"
             Grid.Column="4"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn28"
             Text="18"
             TextColor="Black"
@@ -275,7 +285,7 @@
             Grid.Row="3"
             Grid.Column="5"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn29"
             Text="19"
             TextColor="Black"
@@ -283,7 +293,7 @@
             Grid.Row="3"
             Grid.Column="6"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn30"
             Text="20"
             TextColor="Black"
@@ -291,7 +301,7 @@
             Grid.Row="4"
             Grid.Column="0"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn31"
             Text="21"
             TextColor="Black"
@@ -299,7 +309,7 @@
             Grid.Row="4"
             Grid.Column="1"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn32"
             Text="22"
             TextColor="Black"
@@ -307,7 +317,7 @@
             Grid.Row="4"
             Grid.Column="2"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn33"
             Text="23"
             TextColor="Black"
@@ -315,7 +325,7 @@
             Grid.Row="4"
             Grid.Column="3"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn34"
             Text="24"
             TextColor="Black"
@@ -323,7 +333,7 @@
             Grid.Row="4"
             Grid.Column="4"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn35"
             Text="25"
             TextColor="Black"
@@ -331,7 +341,7 @@
             Grid.Row="4"
             Grid.Column="5"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn36"
             Text="26"
             TextColor="Black"
@@ -339,7 +349,7 @@
             Grid.Row="4"
             Grid.Column="6"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn37"
             Text="27"
             TextColor="Black"
@@ -347,7 +357,7 @@
             Grid.Row="5"
             Grid.Column="0"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn38"
             Text="28"
             TextColor="Black"
@@ -355,43 +365,42 @@
             Grid.Row="5"
             Grid.Column="1"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn39"
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="5"
             Grid.Column="2"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn40"
             BackgroundColor="White"
             Grid.Row="5"
             Grid.Column="3"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn41"
             BackgroundColor="White"
             Grid.Row="5"
             Grid.Column="4"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn42"
             BackgroundColor="White"
             Grid.Row="5"
             Grid.Column="5"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            <Button
+                    <Button
             x:Name="btn43"
             BackgroundColor="White"
             Grid.Row="5"
             Grid.Column="6"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
-            
 
-
-            <Grid />
-        </Grid>
+                </Grid>
+            </StackLayout>
+        </Frame>
+        
+        
     </StackLayout>
-
-   
 </ContentPage>
