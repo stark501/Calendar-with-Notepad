@@ -45,5 +45,7 @@ namespace Calendar_with_Notepad
 
             Application.Current.MainPage = new NavigationPage(new Page1());
         }
+
+        
     }
 }

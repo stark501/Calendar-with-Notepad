@@ -65,7 +65,7 @@
             BackgroundColor="White"
             TextColor="Black"
             FontFamily="Lobster"
-            FontSize="13"
+            FontSize="13"           
             Grid.Row="0"
             Grid.Column="1"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
@@ -144,6 +144,7 @@
                     <Button
             x:Name="btn11"
             Text="1"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="1"
@@ -152,6 +153,7 @@
                     <Button
             x:Name="btn12"
             Text="2"
+            Clicked="Button_Clicked"
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="1"
@@ -160,6 +162,7 @@
                     <Button
             x:Name="btn13"
             Text="3"
+            Clicked="Button_Clicked"
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="1"
@@ -168,6 +171,7 @@
                     <Button
             x:Name="btn14"
             Text="4"
+            Clicked="Button_Clicked"
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="1"
@@ -176,6 +180,7 @@
                     <Button
             x:Name="btn15"
             Text="5"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="1"
@@ -184,6 +189,7 @@
                     <Button
             x:Name="btn16"
             Text="6"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="2"
@@ -192,6 +198,7 @@
                     <Button
             x:Name="btn17"
             Text="7"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="2"
@@ -200,6 +207,7 @@
                     <Button
             x:Name="btn18"
             Text="8"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="2"
@@ -208,6 +216,7 @@
                     <Button
             x:Name="btn19"
             Text="9"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="2"
@@ -216,6 +225,7 @@
                     <Button
             x:Name="btn20"
             Text="10"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="2"
@@ -224,6 +234,7 @@
                     <Button
             x:Name="btn21"
             Text="11"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="2"
@@ -232,6 +243,7 @@
                     <Button
             x:Name="btn22"
             Text="12"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="2"
@@ -240,6 +252,7 @@
                     <Button
             x:Name="btn23"
             Text="13"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="3"
@@ -248,6 +261,7 @@
                     <Button
             x:Name="btn24"
             Text="14"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="3"
@@ -256,6 +270,7 @@
                     <Button
             x:Name="btn25"
             Text="15"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="3"
@@ -264,6 +279,7 @@
                     <Button
             x:Name="btn26"
             Text="16"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="3"
@@ -272,6 +288,7 @@
                     <Button
             x:Name="btn27"
             Text="17"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="3"
@@ -280,6 +297,7 @@
                     <Button
             x:Name="btn28"
             Text="18"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="3"
@@ -288,6 +306,7 @@
                     <Button
             x:Name="btn29"
             Text="19"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="3"
@@ -296,6 +315,7 @@
                     <Button
             x:Name="btn30"
             Text="20"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="4"
@@ -304,6 +324,7 @@
                     <Button
             x:Name="btn31"
             Text="21"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="4"
@@ -312,6 +333,7 @@
                     <Button
             x:Name="btn32"
             Text="22"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="4"
@@ -320,6 +342,7 @@
                     <Button
             x:Name="btn33"
             Text="23"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="4"
@@ -328,6 +351,7 @@
                     <Button
             x:Name="btn34"
             Text="24"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="4"
@@ -336,6 +360,7 @@
                     <Button
             x:Name="btn35"
             Text="25"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="4"
@@ -344,6 +369,7 @@
                     <Button
             x:Name="btn36"
             Text="26"
+            Clicked="Button_Clicked"
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="4"
@@ -352,6 +378,7 @@
                     <Button
             x:Name="btn37"
             Text="27"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="5"
@@ -360,6 +387,7 @@
                     <Button
             x:Name="btn38"
             Text="28"
+            Clicked="Button_Clicked"            
             TextColor="Black"
             BackgroundColor="White"
             Grid.Row="5"
