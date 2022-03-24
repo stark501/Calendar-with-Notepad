@@ -2,8 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Calendar_with_Notepad.Page1">
-    <StackLayout>
-        <Frame 
+    
+    <StackLayout BackgroundColor="#D6D6D6">
+        <Frame
              BackgroundColor="#D77D7D"
                Padding="5">
             <StackLayout Margin="5,5,5,10"                 
@@ -53,7 +54,7 @@
             FontAttributes="Italic,Bold"
             BackgroundColor="White"
             FontFamily="Lobster"
-            FontSize="13"
+            FontSize="11"
             Grid.Row="0"
             Grid.Column="0"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
@@ -65,7 +66,7 @@
             BackgroundColor="White"
             TextColor="Black"
             FontFamily="Lobster"
-            FontSize="13"           
+            FontSize="10.5"           
             Grid.Row="0"
             Grid.Column="1"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
@@ -77,7 +78,7 @@
             BackgroundColor="White"
             TextColor="Black"
             FontFamily="Lobster"
-            FontSize="13"
+            FontSize="11"
             Grid.Row="0"
             Grid.Column="2"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
@@ -89,7 +90,7 @@
             TextColor="Black"
             FontAttributes="Italic,Bold"
             FontFamily="Lobster"
-            FontSize="13"
+            FontSize="11"
             Grid.Row="0"
             Grid.Column="3"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
@@ -101,7 +102,7 @@
             TextColor="Black"
             FontAttributes="Italic,Bold"
             FontFamily="Lobster"
-            FontSize="13"
+            FontSize="11"
             Grid.Row="0"
             Grid.Column="4"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
@@ -113,7 +114,7 @@
             TextColor="Black"
             FontFamily="Lobster"
             TextTransform="None"
-            FontSize="13"
+            FontSize="11"
             Grid.Row="0"
             Grid.Column="5"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
@@ -125,7 +126,7 @@
             FontFamily="Lobster"
             FontAttributes="Italic,Bold"
             TextTransform="None"
-            FontSize="13"
+            FontSize="11"
             Grid.Row="0"
             Grid.Column="6"
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
