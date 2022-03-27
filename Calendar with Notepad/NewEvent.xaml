@@ -1,15 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Calendar_with_Notepad.NewEvent">
+             x:Class="Calendar_with_Notepad.NewEvent"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#7C8483">
    
         <StackLayout>
-            <Button Text="BACK"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"
-                Clicked="OnButtonClicked" />
+        <Frame
+             BackgroundColor="#BEDCFE"
+               Padding="20">
+            <StackLayout Margin="5,5,5,5" >
+                <Label
+                    Text="New Event"
+                    FontSize="Medium">
+                </Label>
+            </StackLayout>
+        </Frame>
 
-       
+
+        <Entry Margin="5,15,5,2" Placeholder="Title..." PlaceholderColor="DarkGray" MaxLength="35"/>
+        <Editor Margin="5,10,5,10" AutoSize="TextChanges" Placeholder="Write a note..." PlaceholderColor="DarkGray" MaxLength="100" />
+        <BoxView Margin="0,20,0,10" HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#FFFFFF"/>
+
+
+        <StackLayout Margin="-5,480,5,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="190" />
+                    <ColumnDefinition Width="190" />
+                </Grid.ColumnDefinitions>
+                <Button
+            Margin="35,0,0,0" 
+            CornerRadius="5"
+            x:Name="CANCEL"
+            Text="CANCEL"
+            TextColor="Black"
+            TextTransform="None" 
+            FontFamily="Lobster"
+            BackgroundColor="#BEDCFE"
+            Clicked="OnButtonClicked"
+            FontSize="20"   
+            HeightRequest="{Binding Width, Source={x:Reference CANCEL}}" />
+                <Button
+                    Margin="35,0,0,0"
+            CornerRadius="5"
+            x:Name="SAVE"
+            Text="SAVE" 
+            TextTransform="None"
+            TextColor="Black"
+            FontFamily="Lobster"
+            BackgroundColor="#BEDCFE"
+            FontSize="20"           
+            Grid.Column="1"
+            HeightRequest="{Binding Width, Source={x:Reference SAVE}}" />
+            </Grid>
+        </StackLayout>
     </StackLayout>
    
 </ContentPage>
