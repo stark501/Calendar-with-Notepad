@@ -23,11 +23,11 @@
         <BoxView Margin="0,20,0,10" HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#FFFFFF"/>
 
 
-        <StackLayout Margin="-5,480,5,0">
+        <StackLayout Margin="-5,475,5,0">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="60" />
-                    <RowDefinition Height="60" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="190" />
