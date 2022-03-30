@@ -23,18 +23,8 @@
         <BoxView Margin="0,20,0,10" HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#FFFFFF"/>
 
 
-        <StackLayout Margin="-5,475,5,0">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="190" />
-                    <ColumnDefinition Width="190" />
-                </Grid.ColumnDefinitions>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,420,0,0" Spacing="50">
                 <Button
-            Margin="35,0,0,0" 
             CornerRadius="5"
             x:Name="CANCEL"
             Text="CANCEL"
@@ -42,11 +32,12 @@
             TextTransform="None" 
             FontFamily="Lobster"
             BackgroundColor="#BEDCFE"
+            WidthRequest="130"
+            HeightRequest="60"
             Clicked="OnButtonClicked"
-            FontSize="20"   
-            HeightRequest="{Binding Width, Source={x:Reference CANCEL}}" />
+            FontSize="20" />  
+             
                 <Button
-                    Margin="35,0,0,0"
             CornerRadius="5"
             x:Name="SAVE"
             Text="SAVE" 
@@ -54,10 +45,12 @@
             TextColor="Black"
             FontFamily="Lobster"
             BackgroundColor="#BEDCFE"
+            WidthRequest="130"
+            HeightRequest="60"
             FontSize="20"           
-            Grid.Column="1"
-            HeightRequest="{Binding Width, Source={x:Reference SAVE}}" />
-            </Grid>
+            Grid.Column="1" />
+         
+           
         </StackLayout>
     </StackLayout>
    
