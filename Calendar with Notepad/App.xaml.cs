@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.IO;
 
 namespace Calendar_with_Notepad
 {
@@ -11,6 +12,20 @@ namespace Calendar_with_Notepad
             InitializeComponent();
 
             MainPage = new NavigationPage(new SplashPage());
+        }
+
+        static Database database;
+
+        public static Database Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Notes.db3"));
+                }
+                return database;
+            }
         }
 
         protected override void OnStart()
