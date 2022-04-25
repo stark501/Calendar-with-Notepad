@@ -4,8 +4,8 @@
              x:Class="Calendar_with_Notepad.NewEvent"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="#7C8483">
-   
-        <StackLayout>
+
+    <StackLayout>
         <Frame
              BackgroundColor="#BEDCFE"
                Padding="20">
@@ -16,29 +16,33 @@
                 </Label>
             </StackLayout>
         </Frame>
-
         <Editor Margin="5,10,5,10" AutoSize="TextChanges" Placeholder="Write a note..." x:Name="Name" PlaceholderColor="DarkGray" MaxLength="100" />
-       
-        <BoxView Margin="0,15,0,10" HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#FFFFFF"/>
 
+        <BoxView Margin="0,15,0,10" HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#FFFFFF"/>
+        
         <ListView x:Name="NotesListView"
                       ItemsSource="{Binding Notes}"
-                      BackgroundColor="#F0ECEC"
+                      BackgroundColor="#7C8483"
                       SelectionMode="None" 
-                      Footer="">
+                      Footer=""
+                  Margin="10,10,10,25">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal" >
-                            <Label  Text="{Binding Name}"      FontSize="15"  />
+
+                        <StackLayout Orientation="Horizontal" BackgroundColor="White" Margin="5,5,5,5">
+
+                            <BoxView Color="{Binding RandomColor}" WidthRequest="5"/>
+                            <Label  Text="{Binding Name}" TextColor="Black" FontSize="15" Margin="5,5,5,5" Background="White" WidthRequest="50" />
 
                         </StackLayout>
+
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
-        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Margin="0,0,0,35">
+        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Margin="0,0,0,50">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"></RowDefinition>
                 </Grid.RowDefinitions>
@@ -47,9 +51,9 @@
                     <ColumnDefinition Width="150"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-            <Button  Clicked="OnButtonClicked" Text="Cancel" FontSize="Medium" x:Name="cmdSubmit" HorizontalOptions="Center" VerticalOptions="End" Grid.Row="2" Grid.Column="0" WidthRequest="150" HeightRequest="70"/>
+            <Button  Clicked="OnButtonClicked" Text="Cancel" FontSize="Medium" x:Name="cmdSubmit" HorizontalOptions="Center" VerticalOptions="End" Grid.Row="0" Grid.Column="0" WidthRequest="150" HeightRequest="70"/>
 
-            <Button  Clicked="OnButtonClicked1" Text="Save" FontSize="Medium" x:Name="cmdReset" HorizontalOptions="Center" VerticalOptions="End" Grid.Row="2" Grid.Column="1" WidthRequest="150" HeightRequest="70"/>
+            <Button  Clicked="OnButtonClicked1" Text="Save" FontSize="Medium" x:Name="cmdReset" HorizontalOptions="Center" VerticalOptions="End" Grid.Row="0" Grid.Column="1" WidthRequest="150" HeightRequest="70"/>
                  </Grid>
 
             </StackLayout>

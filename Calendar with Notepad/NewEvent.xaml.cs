@@ -32,10 +32,19 @@ namespace Calendar_with_Notepad
             }
         }
 
+
+
+
         private async void OnButtonClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new NavigationPage(new Page1());
         }
+
+        static string generateColor()
+        {
+            var color = randomColor();
+
+            return color;
+        }
     }
-   
 }

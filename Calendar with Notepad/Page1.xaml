@@ -428,7 +428,9 @@
             HeightRequest="{Binding Width, Source={x:Reference btn1}}" />
 
                 </Grid>
+                
             </StackLayout>
+            
         </Frame>
 
     </StackLayout>
